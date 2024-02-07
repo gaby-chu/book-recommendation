@@ -36,7 +36,6 @@ The dataset we received was very versatile, as detailed in the [Data](#data) sec
  We want to see how close these "other novels" are to either the horror genre or detective genre. We will train a classifier using the detective and horror novels, and run that classifier on the "other" novels. Those "other" novels will receive a horror or detective label (despite not being canonically those genres). With these classifier outcomes, we will recommend the "other" books labeled "detective" to fans of the detective genre and those labeled "horror" to the horror genre. For example, the classifier ran on *Harry Potter*, a fantasy series, and gave it a horror label, we would recommend horror fans to read *Harry Potter.*
 
 ## Installation and Setup
-
 [(Back to top)](#table-of-contents)
 
 This project was made with `python 3.9.12` with the following dependencies:
@@ -53,7 +52,6 @@ scikit-learn
 `mp_03_research_report.ipynb` contains the final, written report and is both a fully executable file containing the code used to generate results. This project was written entirely in Jupyter Lab. The rest of the jupyter notebook files contain exploratory data analysis, drafts, and extra code used that did not need to be included in the final report.
 
 ### File Structure
-[(Back to top)](#table-of-contents)
 
 ```
 book-recommendation
@@ -77,7 +75,6 @@ The corpus was selected by INFO 3350 staff from [Project Gutenberg](gutenberg.or
 While our research focused on predicting genre, this dataset has the potential to be used for other NLP projects, as seen in the breadth of other students' projects. The metadata also includes the author's gender identity (all provided were binary), year published, and country published. Most of the books were published in the 19th and 20th centuries in either the U.S. or the U.K.
 
 ## Results
-
 [(Back to top)](#table-of-contents)
 
 We did not prioritize accuracy metrics because the testing data does not contain true detective or testing labels. We plotted the true (blue) and predicted detective novels (orange) using the vectorized features. Our book recommendations are the overlapping dots on the graph. We repeated this with the horror novel results, resulting in 5 total book recommendation pairings.
@@ -106,7 +103,6 @@ We did not prioritize accuracy metrics because the testing data does not contain
 Overall, we didn't expect the recommendations we obtain from the classifer to be very great because it is only working with detective and horror, and it will be hard to find overlapping words with only those two genres and the various other genres in the corpus. We were excited that we even 5 pairs from the dataset!
 
 ## Future Work
-
 [(Back to top)](#table-of-contents)
 
 We would love to explore this project with a different corpus because it does not boast a incredible amount of books relative to the distribution of books in existence. Many of the authors were white, which greatly limits the diversity in the narratives. This again has effects on our results because we can not know how works by authors of color factor into the model and what effect this would have on our predictions and recommendations. We also noticed that most of our training data was authored by men while most of the testing data was authored by women. We would also be interested in training a classifier for more than two genres.
